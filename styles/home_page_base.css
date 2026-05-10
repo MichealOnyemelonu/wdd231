@@ -3,13 +3,18 @@
 
     :root {
       --body-font: "Roboto", sans-serif;
-      --primary-color: #1a1a1a;
+      --primary-color: orange;
+      --text-color: #000000;
+      --border-color: #ccc;
+      --white-color: #ffffff;
+
+
       --dark: #2c2c2c;
       --mid: #888;
       --light: #d0d0d0;
       --lighter: #e8e8e8;
       --bg: #f4f4f4;
-      --white: #ffffff;
+      
       --accent: #3a3a3a;
     }
 
@@ -27,8 +32,8 @@
       align-items: center;
       gap: 12px;
       padding: 14px 20px;
-      background: var(--white);
-      border-bottom: 1px solid var(--lighter);
+      background: var(--primary-color);
+      border-bottom: 1px solid var(--border-color);
     }
 
     .logo-box {
@@ -57,7 +62,7 @@
 
     
     nav {
-      background: var(--black);
+      background: green;
       display: flex;
       gap: 2px;
       padding: 0 20px;
@@ -227,3 +232,10 @@
       color: var(--mid);
       line-height: 1.8;
     }
+
+  @media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
