@@ -2,7 +2,8 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --black: #1a1a1a;
+      --body-font: "Roboto", sans-serif;
+      --primary-color: #1a1a1a;
       --dark: #2c2c2c;
       --mid: #888;
       --light: #d0d0d0;
@@ -96,14 +97,14 @@
       margin-bottom: 24px;
     }
 
-    .card {
+    .student_photo {
       border: 1px solid var(--light);
       background: var(--white);
       border-radius: 3px;
       overflow: hidden;
     }
 
-    .card-header {
+    .student_photo-header {
       background: var(--dark);
       color: var(--white);
       text-align: center;
