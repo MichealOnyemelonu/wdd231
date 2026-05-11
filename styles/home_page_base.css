@@ -28,12 +28,8 @@
 
   
     header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
       padding: 1rem;
-      background: var(--primary-color);
-      border-bottom: 1px solid var(--border-color);
+      text-align: center;
     }
 
     header span {
@@ -118,20 +114,20 @@
     }
 
     .student_photo {
+      text-align: center;
       border: 1px solid var(--light);
-      background: var(--white);
+      background: var(--border-color);
       border-radius: 3px;
       overflow: hidden;
     }
 
-    .student_photo-header {
+    .student_photo header {
       background: var(--dark);
       color: var(--white);
       text-align: center;
       padding: 8px 12px;
       font-weight: 600;
       font-size: 13px;
-      letter-spacing: 0.04em;
     }
 
     .card-body {
@@ -142,18 +138,6 @@
       min-height: 200px;
     }
 
-    .photo-placeholder {
-      margin: 16px auto;
-      width: 80%;
-      aspect-ratio: 3/4;
-      background: linear-gradient(135deg, #bbb 0%, #999 50%, #bbb 100%);
-      border-radius: 3px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #777;
-      font-size: 12px;
-    }
 
     
     .courses-section {
