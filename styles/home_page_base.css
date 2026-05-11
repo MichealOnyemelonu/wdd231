@@ -31,10 +31,20 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      padding: 14px 20px;
+      padding: 1rem;
       background: var(--primary-color);
       border-bottom: 1px solid var(--border-color);
     }
+
+    header span {
+    font-weight: 1000;
+    display: block;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    padding: 20px;
+    
+}
 
     .logo-box {
       width: 48px; height: 48px;
@@ -65,7 +75,12 @@
       background: green;
       display: flex;
       gap: 2px;
-      padding: 0 20px;
+      display: flex;
+      justify-content: center;    
+      gap: 1rem;                  
+      flex-wrap: wrap;
+      padding: 10px;  
+      border-radius: 6px; 
     }
 
     nav a {
