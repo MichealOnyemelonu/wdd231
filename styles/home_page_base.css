@@ -8,13 +8,8 @@
       --white-color: #ffffff;
 
 
-      --dark: #2c2c2c;
-      --mid: #888;
-      --light: #d0d0d0;
+     
       
-      --bg: #f4f4f4;
-      
-      --accent: #3a3a3a;
     }
 
     body {
@@ -67,7 +62,7 @@
 
     
     nav {
-      background: var(--green-color);
+      background: var(--border-color);
       display: flex;
       justify-content: center;    
                         
@@ -78,7 +73,7 @@
 
     nav a {
       display: inline-block;
-      color: var(--border-color);
+      color: var(--text-color);
       text-decoration: none;
       padding: 8px 16px;
       font-size: 13px;
@@ -133,7 +128,6 @@
       font-size: 13.5px;
       line-height: 1.7;
       min-height: 200px;
-      font-size: 1.6rem;
       font-weight: bold;
     }
 
@@ -161,8 +155,7 @@
 
     
     .courses-section {
-      border: 1px solid var(--light);
-      background: var(--white);
+      border: 1px solid var(--border-color);
       border-radius: 3px;
       overflow: hidden;
       margin-bottom: 20px;
@@ -176,8 +169,8 @@
     }
 
     .filter-btn {
-      background: var(--lighter);
-      border: 1px solid var(--light);
+      background: var(--border-color);
+      border: 1px solid var(--border-color);
       border-radius: 3px;
       padding: 8px;
       font-family: 'DM Sans', sans-serif;
@@ -185,10 +178,16 @@
       font-weight: 600;
       cursor: pointer;
       transition: background 0.15s, border-color 0.15s;
-      color: var(--black);
+      color: var(--text-color);
     }
-    .filter-btn:hover { background: var(--light); }
-    .filter-btn.active { background: var(--dark); color: var(--white); border-color: var(--dark); }
+    .filter-btn:hover { 
+      background: var(--primary-color); 
+    }
+    .filter-btn.active { 
+      background: var(--dark); 
+      color: var(--white); 
+      border-color: var(--dark); 
+    }
 
     .course-list {
       display: grid;
