@@ -30,16 +30,24 @@
 
 
 <body>
-  <header>
-    <span id="course-title">Web Frontend Development 1</span>
-    <nav>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">
-        Favorite Scripture
-      </a>
-      <a href="final-project/index.html">Final Project</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <span id="course-title">Web Frontend Development 1</span>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="main-nav" id="mainNav">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">Home</a>
+        <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Chamber Project</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">
+        Final Project</a>
+        <a href="final-project/index.html">Final Project</a>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -76,24 +84,17 @@
     </section>
 
     <section class="courses-section">
-      <h2>Web Certificate Courses</h2>
+      <h2 class="section-title"> Web Certificate Courses</h2>
  
       <div class="filter-row">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="cse">CSE</button>
-        <button class="filter-btn" data-filter="wdd">WDD</button>
+        <button class="filter-btn" data-filter="CSE">CSE</button>
+        <button class="filter-btn" data-filter="WDD">WDD</button>
       </div>
  
-      <div class="course-list" id="courseList">
-        <div class="course-item" data-cat="wdd">WDD 130</div>
-        <div class="course-item" data-cat="wdd">WDD 131</div>
-        <div class="course-item" data-cat="wdd">WDD 231</div>
-        <div class="course-item" data-cat="cse">CSE 110</div>
-        <div class="course-item" data-cat="cse">CSE 111</div>
-        <div class="course-item" data-cat="cse">CSE 210</div>
-      </div>
+      <div class="course-list" id="courseList"></div>
  
-      <p class="credits-note" id="creditsNote">The total credits for course listed above is 6</p>
+      <p class="credits-note" id="creditsNote"></p>
     </section>
 
      <section class="social-section">
