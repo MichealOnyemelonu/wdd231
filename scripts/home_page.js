@@ -85,12 +85,12 @@ const creditsNote = document.getElementById('creditsNote');
 const filterBtns  = document.querySelectorAll('.filter-btn');
 
 function renderCourses(filter) {
-  // 1. Filter the array
+  
   const visible = filter === 'all'
     ? courses
     : courses.filter(c => c.subject === filter);
 
-  // 2. Build HTML dynamically from filtered array
+
   courseList.innerHTML = visible.map(c => `
     <div class="course-item ${c.completed ? 'completed' : ''}">
       ${c.subject} ${c.number}
@@ -98,12 +98,12 @@ function renderCourses(filter) {
     </div>
   `).join('');
 
-  // 3. Calculate total credits using reduce
+  
   const total = visible.reduce((sum, c) => sum + c.credits, 0);
   creditsNote.textContent = `Total credits shown: ${total}`;
 }
 
-// Filter button click handlers
+
 filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     filterBtns.forEach(b => b.classList.remove('active'));
@@ -112,5 +112,5 @@ filterBtns.forEach(btn => {
   });
 });
 
-// Initial render on page load
+
 renderCourses('all');

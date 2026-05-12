@@ -2,7 +2,7 @@
 
   
   .nav-toggle {
-    display: flex;
+    display: flex !important;
   }
 
   .main-nav {
