@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse local businesses and organizations that are members of the Maplewood Chamber of Commerce in Maplewood, Oregon.">
+  <meta name="author" content="Your Name">
+
+  <title>Business Directory | Maplewood Chamber of Commerce</title>
+
+ 
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232C5F2E'/><text y='24' x='4' font-size='22'>🌲</text></svg>">
+
+ 
+  <meta property="og:title"       content="Business Directory | Maplewood Chamber of Commerce">
+  <meta property="og:description" content="Find local Maplewood, Oregon businesses. Browse our member directory of gold, silver, and community members.">
+  <meta property="og:image"       content="images/og-preview.jpg">
+  <meta property="og:url"         content="https://yourusername.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type"        content="website">
+
+  
+   <link rel="stylesheet" href="styles/normalise.css">
+  <link rel="stylesheet" href="styles/directory_small.css">
+  <link rel="stylesheet" href="styles/directory_larger.css">
+  
+
+  <script src="scripts/directory.js"></script>
+
+</head>
+<body>
+
+  
+  <header id="site-header">
+    <div class="header-inner">
+      
+      <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" aria-hidden="true">
+        <circle cx="40" cy="40" r="38" fill="rgba(0,0,0,0.12)" stroke="rgba(0,0,0,0.15)" stroke-width="1"/>
+        
+        <rect x="20" y="45" width="40" height="18" fill="rgba(0,0,0,0.25)" rx="2"/>
+        <rect x="26" y="30" width="6" height="15" fill="rgba(0,0,0,0.3)" rx="1"/>
+        <rect x="37" y="30" width="6" height="15" fill="rgba(0,0,0,0.3)" rx="1"/>
+        <rect x="48" y="30" width="6" height="15" fill="rgba(0,0,0,0.3)" rx="1"/>
+        <polygon points="40,14 62,32 18,32" fill="rgba(0,0,0,0.35)"/>
+      </svg>
+
+      <div class="header-text">
+        <h1>Maplewood Chamber of Commerce</h1>
+        <p>Maplewood, Oregon &mdash; Building Community Since 1952</p>
+      </div>
+
+      
+      <button id="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  
+  <nav id="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+
+  
+  <section class="page-hero" aria-label="Page hero">
+    <h2>Business Directory</h2>
+    <p>Connecting Maplewood's business community &mdash; one member at a time.</p>
+  </section>
+
+  
+  <main>
+
+    
+    <div class="directory-controls">
+      <h3>Our Members</h3>
+      <div class="view-toggle" role="group" aria-label="Toggle directory view">
+        <button class="view-btn active" id="grid-btn" aria-pressed="true" title="Grid view">
+          Grid
+        </button>
+        <button class="view-btn" id="list-btn" aria-pressed="false" title="List view">
+          List
+        </button>
+      </div>
+    </div>
+
+    
+    <section id="members-container" class="grid-view" aria-live="polite" aria-label="Member listings">
+      <p class="loading-msg">Loading members&hellip;</p>
+    </section>
+
+  </main>
+
+  
+  <footer id="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <h3>Maplewood Chamber of Commerce</h3>
+        <p>Supporting local businesses and fostering a thriving community in Maplewood, Oregon since 1952.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>
+          123 Main Street, Suite 200<br>
+          Maplewood, OR 97401<br>
+          <a href="tel:5415550100">(541) 555-0100</a><br>
+          <a href="mailto:info@maplewoodchamber.example.com">info@maplewoodchamber.example.com</a>
+        </p>
+      </div>
+
+      <div class="footer-dev">
+        <span>
+          &copy; <span id="copyright-year"></span> | Your Name | Maplewood, Oregon
+        </span>
+        <span>
+          WDD 231 &bull; Last Modified: <span id="last-modified"></span>
+        </span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  
+</body>
+</html>

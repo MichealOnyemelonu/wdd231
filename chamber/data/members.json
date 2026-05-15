@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Maplewood Hardware & Supply",
+    "address": "112 Elm Street, Maplewood, OR 97401",
+    "phone": "(541) 555-0182",
+    "website": "https://maplewoodhardware.example.com",
+    "image": "images/hardware.webp",
+    "level": 3,
+    "description": "Your local source for tools, lumber, and home improvement supplies since 1978."
+  },
+  {
+    "name": "Cascade Coffee Roasters",
+    "address": "45 Birch Ave, Maplewood, OR 97401",
+    "phone": "(541) 555-0234",
+    "website": "https://cascadecoffee.example.com",
+    "image": "images/coffee.webp",
+    "level": 3,
+    "description": "Artisan small-batch coffee roasted right here in the Willamette Valley."
+  },
+  {
+    "name": "Riverbend Medical Clinic",
+    "address": "300 Oak Boulevard, Maplewood, OR 97401",
+    "phone": "(541) 555-0310",
+    "website": "https://riverbendmedical.example.com",
+    "image": "images/clinic.webp",
+    "level": 3,
+    "description": "Comprehensive primary care and urgent care services for the Maplewood community."
+  },
+  {
+    "name": "Pacific Pines Realty",
+    "address": "78 Cedar Lane, Maplewood, OR 97401",
+    "phone": "(541) 555-0455",
+    "website": "https://pacificpinesrealty.example.com",
+    "image": "images/realty.webp",
+    "level": 2,
+    "description": "Helping families find their dream homes in the Pacific Northwest for over 20 years."
+  },
+  {
+    "name": "Maplewood Public Library",
+    "address": "5 Library Square, Maplewood, OR 97401",
+    "phone": "(541) 555-0512",
+    "website": "https://maplewoodlibrary.example.com",
+    "image": "images/library.webp",
+    "level": 1,
+    "description": "A nonprofit hub for learning, literacy, and community programming."
+  },
+  {
+    "name": "Timberline Outdoor Gear",
+    "address": "210 Fern Street, Maplewood, OR 97401",
+    "phone": "(541) 555-0678",
+    "website": "https://timberlinegear.example.com",
+    "image": "images/gear.webp",
+    "level": 2,
+    "description": "Hiking, camping, and climbing gear curated for serious Pacific Northwest adventurers."
+  },
+  {
+    "name": "Valley Harvest Kitchen",
+    "address": "33 Willow Way, Maplewood, OR 97401",
+    "phone": "(541) 555-0741",
+    "website": "https://valleyharvestkitchen.example.com",
+    "image": "images/restaurant.webp",
+    "level": 2,
+    "description": "Farm-to-table dining celebrating local Oregon produce and seasonal menus."
+  },
+  {
+    "name": "Maplewood Tech Solutions",
+    "address": "900 Innovation Drive, Maplewood, OR 97401",
+    "phone": "(541) 555-0899",
+    "website": "https://maplewoodtech.example.com",
+    "image": "images/tech.webp",
+    "level": 3,
+    "description": "IT support, managed services, and web development for local businesses."
+  }
+]
