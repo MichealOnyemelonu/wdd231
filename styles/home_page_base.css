@@ -75,9 +75,9 @@
     }
 
     nav a.active {
-      color: var(--green-color);
+      color: var(--text-color);
       font-weight: 700;
-      border-bottom: 2px solid var(--green-color);
+      border-bottom: 2px solid var(--text-color);
     }
 
     nav a:hover {
