@@ -612,7 +612,7 @@ body.dark .forecast-box {
   width: 100%;
   min-height: 260px;
   overflow: hidden;
-  background: #2B2B2B;
+  background: linear-gradient(135deg, #C4730A, #E8890C);
 }
 
 .hero img {
