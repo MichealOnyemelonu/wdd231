@@ -221,13 +221,13 @@
     }
 
     .course-item {
-      background: var(--lighter);
+      background: var(--green-color);
       border: 1px solid var(--border-color);
       border-radius: 3px;
       padding: 7px 10px;
       text-align: center;
       font-weight: 500;
-      color: var(--text-color);
+      color: var(--white-color);
       transition: opacity 0.2s;
     }
     .course-item.hidden { display: none; }
