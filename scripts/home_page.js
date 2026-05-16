@@ -10,7 +10,7 @@
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -23,7 +23,7 @@
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -35,7 +35,7 @@
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -47,7 +47,7 @@
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -61,7 +61,7 @@
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -114,3 +114,13 @@ filterBtns.forEach(btn => {
 
 
 renderCourses('all');
+
+const navToggle = document.getElementById('navToggle');
+const mainNav = document.getElementById('mainNav');
+
+navToggle.addEventListener('click', () => {
+  mainNav.classList.toggle('open');
+  navToggle.classList.toggle('open');
+  const isOpen = mainNav.classList.contains('open');
+  navToggle.setAttribute('aria-expanded', isOpen);
+});

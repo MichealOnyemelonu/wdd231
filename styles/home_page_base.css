@@ -43,14 +43,7 @@
       text-align: center;
     }
 
-    header span {
-    font-weight: 1000;
-    display: block;
-    text-align: center;
-    background-color: var(--primary-color);
-    border-radius: 6px;
-    padding: 20px;
-}
+
 
     header h1 {
       
@@ -80,6 +73,13 @@
       font-weight: 500;
       transition: background 0.15s, color 0.15s;
     }
+
+    nav a.active {
+      color: var(--green-color);
+      font-weight: 700;
+      border-bottom: 2px solid var(--green-color);
+    }
+
     nav a:hover {
       color: var(--green-color)
     }
@@ -99,8 +99,9 @@
 
     .nav-toggle span {
       display: block;
+      width: 100%;
       height: 2px;
-      background: var(--white);
+      background: var(--white-color);
       border-radius: 2px;
       transition: transform 0.3s, opacity 0.3s;
 }
