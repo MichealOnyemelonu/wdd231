@@ -6,9 +6,12 @@
       --background-color: #e8e8e8;
       --border-color: #ccc;
       --white-color: #ffffff;
-
-
-     
+      --black: #000000;
+      --white: #ffffff;
+      --dark: #333333;
+      --lighter: #f5f5f5;
+      --light: #dddddd;
+      --bg: #f0f0f0;
       
     }
 
