@@ -1,7 +1,6 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@300;400;600;700&display=swap');
 
 :root {
   
@@ -49,31 +48,7 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
 
-body {
-  font-family: var(--font-body);
-  font-weight: 400;
-  color: var(--color-text);
-  background-color: var(--color-bg);
-  line-height: 1.6;
-  min-width: 320px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-  transition: color var(--transition);
-}
 
 a:hover {
   color: var(--color-secondary);
@@ -600,61 +575,13 @@ body.dark .member-card,
 body.dark .member-list-item,
 body.dark .spotlight-card,
 body.dark .events-box,
-body.dark .weather-box,
+body.dark 
 body.dark .forecast-box {
   background-color: var(--color-surface);
   border-color: var(--color-border);
 }
 
 
-.hero {
-  position: relative;
-  width: 100%;
-  min-height: 260px;
-  overflow: hidden;
-  background: linear-gradient(135deg, #C4730A, #E8890C);
-}
-
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  min-height: 260px;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom right,
-    rgba(0,0,0,0.15) 0%,
-    rgba(0,0,0,0.05) 60%,
-    rgba(0,0,0,0.35) 100%);
-}
-
-.hero-cta {
-  position: absolute;
-  bottom: var(--space-lg);
-  right: var(--space-lg);
-}
-
-.btn-cta {
-  display: inline-block;
-  padding: 0.65rem 1.4rem;
-  background-color: var(--color-primary);
-  color: var(--color-footer-text);
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 0.9rem;
-  border-radius: 30px;
-  border: none;
-  cursor: pointer;
-  box-shadow: var(--shadow-md);
-  transition: background-color var(--transition), transform var(--transition);
-  text-decoration: none;
-  letter-spacing: 0.03em;
-}
 
 .btn-cta:hover {
   background-color: var(--color-accent);
@@ -678,23 +605,7 @@ body.dark .forecast-box {
 }
 
 
-.info-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-md);
-  margin-bottom: var(--space-xl);
-}
 
-
-.events-box,
-.weather-box,
-.forecast-box {
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--color-border);
-  background-color: var(--color-surface);
-}
 
 .panel-header {
   background-color: #2B2B2B;
@@ -785,14 +696,7 @@ body.dark .forecast-box {
 .weather-details span { display: block; }
 
 
-.forecast-day {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.45rem 0;
-  border-bottom: 1px solid var(--color-border);
-  font-size: 0.88rem;
-}
+
 
 .forecast-day:last-child { border-bottom: none; }
 
@@ -827,21 +731,7 @@ body.dark .forecast-box {
   border-bottom: 2px solid var(--color-border);
 }
 
-.spotlights-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-md);
-}
 
-.spotlight-card {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow var(--transition), transform var(--transition);
-  text-align: center;
-}
 
 .spotlight-card:hover {
   box-shadow: var(--shadow-md);
@@ -909,19 +799,7 @@ body.dark .forecast-box {
 .spotlight-info a:hover { color: var(--color-accent); }
 
 
-.footer-home {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-lg);
-}
 
-.footer-social {
-  display: flex;
-  flex-direction: column;
-  align-items: center;   
-  gap: var(--space-sm);
-  text-align: center;
-}
 
 .footer-social h4 {
   font-size: 0.85rem;
@@ -957,12 +835,7 @@ body.dark .forecast-box {
   color: var(--color-footer-text);
 }
 
-.footer-meta {
-  font-size: 0.82rem;
-  color: rgba(0,0,0,0.65);
-  line-height: 1.8;
-  text-align: center;   
-}
+
 
 .footer-meta strong {
   display: block;

@@ -39,6 +39,14 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .hero { min-height: 340px; }
+  .hero img { min-height: 340px; }
+
+ 
+  .spotlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 
@@ -141,17 +149,7 @@
 
 
 
-@media (min-width: 640px) {
-  .hero { min-height: 340px; }
-  .hero img { min-height: 340px; }
 
- 
-  .spotlights-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  
-}
 
 @media (min-width: 900px) {
   .hero { min-height: 440px; }
