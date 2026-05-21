@@ -4,7 +4,7 @@
     "address": "14 Admiralty Way, Lekki, Lagos",
     "phone": "(081) 234-5678",
     "website": "https://lagostechhub.example.com",
-    "image": "images/lagos.jpg",
+    "image": "images/lagos.webp",
     "level": 3,
     "description": "Premier technology innovation center in Lagos."
   },
@@ -13,7 +13,7 @@
     "address": "Plot 301 Herbert Macaulay Way, Abuja",
     "phone": "(080) 345-6789",
     "website": "https://abujabusiness.example.com",
-    "image": "images/abuja.jpg",
+    "image": "images/abuja.webp",
     "level": 3,
     "description": "Full-service business support and office solutions."
   },
@@ -22,7 +22,7 @@
     "address": "22 Aba Road, Port Harcourt, Rivers State",
     "phone": "(084) 456-7890",
     "website": "https://ndlogistics.example.com",
-    "image": "images/nigerdelta.jpg",
+    "image": "images/nigerdelta.webp",
     "level": 2,
     "description": "Reliable cargo and freight services across Nigeria."
   },
@@ -31,7 +31,7 @@
     "address": "7 Bello Road, Kano, Kano State",
     "phone": "(064) 567-8901",
     "website": "https://kanotextile.example.com",
-    "image": "images/kano.jpg",
+    "image": "images/kano.webp",
     "level": 2,
     "description": "Traditional and modern textile production since 1980."
   },
@@ -40,7 +40,7 @@
     "address": "3 Independence Layout, Enugu, Enugu State",
     "phone": "(042) 678-9012",
     "website": "https://enugueenergy.example.com",
-    "image": "images/enugu.jpg",
+    "image": "images/enugu.webp",
     "level": 2,
     "description": "Sustainable energy solutions for southern Nigeria."
   },
@@ -49,7 +49,7 @@
     "address": "55 Dugbe Market Road, Ibadan, Oyo State",
     "phone": "(022) 789-0123",
     "website": "https://ibadanagri.example.com",
-    "image": "images/ibadan.jpg",
+    "image": "images/ibadan.webp",
     "level": 1,
     "description": "Farmer cooperative supporting rural agricultural growth."
   },
@@ -58,7 +58,7 @@
     "address": "1 Mary Slessor Avenue, Calabar, Cross River State",
     "phone": "(087) 890-1234",
     "website": "https://calabartourism.example.com",
-    "image": "images/calabar.jpg",
+    "image": "images/calabar.webp",
     "level": 1,
     "description": "Promoting Calabar as Nigeria's most hospitable city."
   }
