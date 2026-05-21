@@ -54,9 +54,11 @@ listBtn.addEventListener('click', () => {
 });
 
 
-function createGridCard(member) {
+function createGridCard(member, index) {
   const card = document.createElement('article');
   card.classList.add('member-card');
+
+   const isFirst = index === 0;
 
   card.innerHTML = `
     <img
@@ -64,7 +66,7 @@ function createGridCard(member) {
       alt="${member.name} logo"
       width="120"
       height="80"
-      loading="lazy"
+      ${isFirst ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"'}
       onerror="this.src='images/placeholder.png'; this.onerror=null;"
     >
     <h3>${member.name}</h3>
@@ -96,9 +98,9 @@ function createListItem(member) {
 function renderMembers(members) {
   membersContainer.innerHTML = '';
 
-  members.forEach(member => {
+  members.forEach((member, index) => {
     const el = currentView === 'grid'
-      ? createGridCard(member)
+      ? createGridCard(member, index)
       : createListItem(member);
     membersContainer.appendChild(el);
   });

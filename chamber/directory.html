@@ -21,7 +21,15 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
+  </noscript>
+  
+  <style> 
+  body { font-family: 'Open Sans', 'Segoe UI', sans-serif; } 
+  h1,h2,h3,h4 { font-family: 'Merriweather', Georgia, serif; }
+  </style>
 
 
   <link rel="stylesheet" href="styles/normalize.css">
@@ -39,12 +47,12 @@
 
      
       <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" aria-hidden="true">
-        <circle cx="40" cy="40" r="38" fill="rgba(0,0,0,0.12)" stroke="rgba(0,0,0,0.15)" stroke-width="1"/>
-        <rect x="20" y="45" width="40" height="18" fill="rgba(0,0,0,0.25)" rx="2"/>
-        <rect x="26" y="30" width="6" height="15" fill="rgba(0,0,0,0.3)" rx="1"/>
-        <rect x="37" y="30" width="6" height="15" fill="rgba(0,0,0,0.3)" rx="1"/>
-        <rect x="48" y="30" width="6" height="15" fill="rgba(0,0,0,0.3)" rx="1"/>
-        <polygon points="40,14 62,32 18,32" fill="rgba(0,0,0,0.35)"/>
+        <circle cx="40" cy="40" r="38" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+        <rect x="20" y="45" width="40" height="18" fill="rgba(255,255,255,0.3)" rx="2"/>
+        <rect x="26" y="30" width="6" height="15" fill="rgba(255,255,255,0.4)" rx="1"/>
+        <rect x="37" y="30" width="6" height="15" fill="rgba(255,255,255,0.4)" rx="1"/>
+        <rect x="48" y="30" width="6" height="15" fill="rgba(255,255,255,0.4)" rx="1"/>
+        <polygon points="40,14 62,32 18,32" fill="rgba(255,255,255,0.5)"/>
       </svg>
 
       <div class="header-text">
