@@ -1,9 +1,4 @@
-// ================================================
-//  Maplewood Chamber – directory.js
-//  Fetches members.json, renders grid/list views
-// ================================================
 
-// --- DOM References ---
 const membersContainer = document.getElementById('members-container');
 const gridBtn          = document.getElementById('grid-btn');
 const listBtn          = document.getElementById('list-btn');
@@ -12,11 +7,11 @@ const mainNavUl        = document.querySelector('#main-nav ul');
 const copyrightYear    = document.getElementById('copyright-year');
 const lastModified     = document.getElementById('last-modified');
 
-// --- Footer: dynamic year and last modified date ---
+
 copyrightYear.textContent = new Date().getFullYear();
 lastModified.textContent  = document.lastModified;
 
-// --- Hamburger menu toggle ---
+
 menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('open');
   menuToggle.setAttribute(
@@ -26,10 +21,10 @@ menuToggle.addEventListener('click', () => {
   mainNavUl.classList.toggle('open');
 });
 
-// --- Current view state ---
+
 let currentView = 'grid';
 
-// --- Set active view ---
+
 function setView(view) {
   currentView = view;
 
@@ -58,7 +53,7 @@ listBtn.addEventListener('click', () => {
   renderMembers(window.membersData);
 });
 
-// --- Build grid card matching PDF example ---
+
 function createGridCard(member) {
   const card = document.createElement('article');
   card.classList.add('member-card');
@@ -79,7 +74,7 @@ function createGridCard(member) {
   return card;
 }
 
-// --- Build list item with zebra striping (handled by CSS nth-child) ---
+
 function createListItem(member) {
   const item = document.createElement('article');
   item.classList.add('member-list-item');
@@ -96,7 +91,6 @@ function createListItem(member) {
   return item;
 }
 
-// --- Render members to the DOM ---
 function renderMembers(members) {
   membersContainer.innerHTML = '';
 
@@ -108,7 +102,7 @@ function renderMembers(members) {
   });
 }
 
-// --- Fetch members.json ---
+
 async function loadMembers() {
   membersContainer.innerHTML = '<p class="loading-msg">Loading members&hellip;</p>';
 
@@ -128,5 +122,5 @@ async function loadMembers() {
   }
 }
 
-// --- Init ---
+
 loadMembers();
