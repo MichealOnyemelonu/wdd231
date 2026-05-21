@@ -1,0 +1,55 @@
+Instructions
+Review the Project Scope
+Review the chamber of commerce project description.
+Review the chamber of commerce project site planning document.
+File and Folder Setup
+Add a new folder to your main wdd231 directory named "chamber".
+The chamber folder will contain all of the project's pages and assets. This subfolder is like its own, independent website.
+
+In the new chamber subfolder, add a new file named "directory.html".
+Add the common subfolders to the chamber folder to store and organize the images, CSS, and JavaScript.
+HTML
+In your directory.html document, add the standard head and meta content with a valid title, description, and author.
+Design and include a favicon for your chamber site.
+Add FaceBook social media meta settings for the
+title
+description
+image
+url
+Testing Social Media Meta Data
+You can test the meta data on your page using the FaceBook Sharing Debugger tool. It allows you to see the information that is used when your website content is shared on Facebook, Messenger, and other places.
+
+Navigate to the FaceBook Sharing Debugger tool.
+Enter the URL of your page and click the Debug button.
+If this is the first time, click the Fetch New Information that displays in a warning box.
+Meta FaceBook Notification – Fetch New Information
+Here is a link to an example report. Notice at the bottom of the report the Open Graph properties that were found.
+Notice the referenced image is located in the GitHub repository. If you link to an image from an external source, you may get your site blocked as malicious.
+Use the site plan to create the required content and layout for the header, navigation, and footer. These items should be consistent between all the pages of the project. Do not include the body content from the example site plan for this assignment. It will be used when you create the landing page next week.
+The footer is required to have contact information and some additional development information as shown in the site plan wireframes. Include your full name, WDD 231, and the last modification date of the page which is generated automatically using JavaScript.
+The main content of the directory page will display a list of members as a grid of 'cards' or as a line item list, depending upon the user's selection.
+
+CSS
+Style your page using your planned color scheme. Remember that the style will be used on all the pages of your chamber project. It is normal for you to make adjustments as you work on the project throughout the course.
+The directory page is the first page of the project. It is important to get the layout and design correct before moving on to the other pages. The directory page will be used as a template for the other pages in the project.
+
+Use a normalize or reset CSS. Be sure to link it before any other CSS file in the head.
+Next link a small.css followed by a larger.css file (We practiced this in week 1). Modify the small and larger css files as needed for each new page you add. Do NOT add additional CSS files for each new page!
+Every page on the site must be responsive from 320px to wider views without any horizontal scrolling.
+The responsive, main navigation menu must support the pages listed in the site plan.
+You may NOT use a CSS framework like Bootstrap or Tailwind CSS for this project. All CSS must be your own creation.
+
+JavaScript
+Create a file named "members.json" and store it in a new folder named "data" in your existing chamber project folder.
+Create an array of at least seven (7) companies where each entry includes the following fields
+company name
+company addresses
+company phone number
+company website URL
+image file name with extension (you will need to have a different image for each business)
+membership level (1=member, 2=silver, 3=gold)
+other information you deem appropriate
+The company information can be real or made up. The important thing is that you are able to create page information from a JSON data source.
+
+Using the JSON data source, display the member information on the page using the fetch method and async/await functionality.
+Let the user toggle between a "grid" type view of member cards or a simple, one-column list of members
