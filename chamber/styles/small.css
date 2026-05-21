@@ -391,3 +391,11 @@ main h1 {
 }
 
 .footer-dev p { margin: 2px 0; }
+
+.site-name {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 0;
+  color: var(--color-footer-text);
+}
