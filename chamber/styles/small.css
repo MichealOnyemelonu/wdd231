@@ -249,6 +249,9 @@ main h1 {
   font-weight: 700;
   margin: 0 0 var(--space-xs);
   color: var(--color-text);
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
 }
 
 .member-card p {

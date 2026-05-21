@@ -62,6 +62,8 @@ function createGridCard(member) {
     <img
       src="${member.image}"
       alt="${member.name} logo"
+      width="120"
+      height="80"
       loading="lazy"
       onerror="this.src='images/placeholder.png'; this.onerror=null;"
     >
