@@ -47,19 +47,21 @@
 
     <div class="header-text">
       <p class="site-name">Nigeria Chamber of Commerce</p>
-      <p>Nigeria — Building Community Since 1950</p>
+      <p>Nigeria &mdash; Building Community Since 1950</p>
     </div>
 
-    <button id="menu-toggle" aria-label="Toggle navigation">
-      <span></span><span></span><span></span>
-    </button>
+    <button id="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
   </div>
 </header>
 
 
-<nav id="main-nav">
+<nav id="main-nav" aria-label="Main navigation">
   <ul>
-    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
     <li><a href="directory.html">Directory</a></li>
     <li><a href="join.html">Join</a></li>
     <li><a href="discover.html">Discover</a></li>
