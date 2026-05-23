@@ -1,0 +1,17 @@
+.home-sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+
+.home-sections {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 640px) {
+  .home-sections {
+    grid-template-columns: 1fr 1fr;
+  }
+}

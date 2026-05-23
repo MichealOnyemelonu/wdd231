@@ -13,8 +13,9 @@
 
  
   <meta property="og:title" content="Nigeria Chamber of Commerce">
-  <meta property="og:description" content="Connecting businesses across Nigeria since 1950.">
-  <meta property="og:image" content="images/lagos.webp">
+  <meta property="og:description" content="Find local Nigerian businesses. Welcome to our home page where you can get to know all about us">
+  <meta property="og:image" content="https://michealonyemelonu.github.io/wdd231/chamber/images/lagos.webp">
+  <meta property="og:url"         content="https://michealonyemelonu.github.io/wdd231/chamber/index.html">
   <meta property="og:type" content="website">
 
  
@@ -26,6 +27,9 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
+
+  <link rel="stylesheet" href="styles/index/larger.css">
+  <link rel="stylesheet" href="styles/index/small.css">
 
  
   <script src="scripts/index.js" defer></script>
@@ -70,24 +74,26 @@
     <a href="join.html" class="view-btn active">Join the Chamber</a>
   </section>
 
-  <!-- ✅ CURRENT EVENTS -->
-  <section>
-    <h2>Current Events</h2>
-    <p>📢 Annual Business Summit - June 15, Lagos</p>
-    <p>🤝 SME Networking Night - July 2</p>
-  </section>
-
  
-  <section id="weather">
-    <h2>Weather in Lagos</h2>
-    <p id="current-temp"></p>
-    <p id="weather-desc"></p>
-    <div id="forecast"></div>
-  </section>
+  <div class="home-sections">
+    <section>
+      <h1>Current Events</h1>
+      <p>📢 Annual Business Summit - June 15, Lagos</p>
+      <p>🤝 SME Networking Night - July 2</p>
+    </section>
+    
+    
+    <section id="weather">
+      <h2>Weather in Lagos</h2>
+      <p id="current-temp"></p>
+      <p id="weather-desc"></p>
+      <div id="forecast"></div>
+    </section>
+  </div>
 
   
   <section>
-    <h2>Member Spotlights</h2>
+    <h3>Member Spotlights</h3>
     <div id="spotlights" class="grid-view"></div>
   </section>
 
