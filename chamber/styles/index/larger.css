@@ -1,0 +1,10 @@
+@media (min-width: 640px) {
+  .home-sections {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .home-sections section {
+    flex: 1;
+  }
+}
