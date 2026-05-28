@@ -1,5 +1,12 @@
+
 .home-sections {
   display: flex;
   flex-direction: column;
   gap: var(--space-lg);
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
 }

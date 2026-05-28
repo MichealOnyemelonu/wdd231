@@ -1,5 +1,3 @@
-
-
 @media (min-width: 640px) {
   #members-container.grid-view {
     grid-template-columns: repeat(2, 1fr);
