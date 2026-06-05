@@ -61,7 +61,7 @@
       </div>
 
       
-      <button id="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+      <button id="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">
         <span></span>
         <span></span>
         <span></span>
@@ -87,7 +87,7 @@
 
   <div class="join-container">
 
-    <form method="get" action="thankyou.html">
+    <form method="get" action="thankyou.html" aria-label="Membership application form">
 
       <label>
         First Name:
@@ -131,7 +131,7 @@
 
       <label>
         Membership Level:
-        <select name="membership" required>
+        <select name="membership" required title="Select a membership level">
           <option value="">Select Level</option>
           <option value="np">NP Membership</option>
           <option value="bronze">Bronze</option>
@@ -161,19 +161,19 @@
 
       <div class="card">
         <h3>Bronze</h3>
-        <a href="#" class="modal-link" data-modal="npModal">More Info</a>
+        <a href="#" class="modal-link" data-modal="bronzeModal">More Info</a>
 
       </div>
 
       <div class="card">
         <h3>Silver</h3>
-        <a href="#" class="modal-link" data-modal="npModal">More Info</a>
+        <a href="#" class="modal-link" data-modal="silverModal">More Info</a>
 
       </div>
 
       <div class="card">
         <h3>Gold</h3>
-        <a href="#" class="modal-link" data-modal="npModal">More Info</a>
+        <a href="#" class="modal-link" data-modal="goldModal">More Info</a>
 
       </div>
 
