@@ -1,5 +1,6 @@
 :root { 
   --color-bg:       #FFFFFF;
+  --color-surface:  #FFFFFF;
   --color-border:   #CCCCCC;
   --color-gray:     #888888;
   --color-orange:   #E85D04;
@@ -40,7 +41,7 @@ form textarea {
 form input[type="submit"] {
   margin-top: 1rem;
   background-color: var(--color-gray);
-  color: #fff;
+  color: var(--color-surface);
   border: none;
   cursor: pointer;
   font-weight: bold;
