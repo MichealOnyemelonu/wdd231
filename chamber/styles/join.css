@@ -1,12 +1,4 @@
-:root { 
-  --color-bg:       #FFFFFF;
-  --color-surface:  #FFFFFF;
-  --color-border:   #CCCCCC;
-  --color-gray:     #888888;
-  --color-orange:   #E85D04;
 
-
-}
 
 form {
   display: flex;
