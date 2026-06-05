@@ -2,10 +2,27 @@
 document.getElementById("timestamp").value = new Date().toISOString();
 
 
-function openModal(id) {
-  document.getElementById(id).showModal();
-}
+const modalLinks = document.querySelectorAll(".modal-link");
 
-function closeModal(id) {
-  document.getElementById(id).close();
-}
+
+modalLinks.forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const modalId = link.dataset.modal;
+    const modal = document.getElementById(modalId);
+
+    if (modal) {
+      modal.showModal();
+    }
+  });
+});
+
+
+const closeButtons = document.querySelectorAll("dialog button");
+
+closeButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    button.closest("dialog").close();
+  });
+});
