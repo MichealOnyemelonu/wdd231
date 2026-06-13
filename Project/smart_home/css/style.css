@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-/* NAV */
+
 nav ul {
   display: none;
 }
@@ -21,14 +21,14 @@ nav ul.show {
   }
 }
 
-/* CARDS */
+
 .card {
   border: 1px solid #ccc;
   margin: 10px;
   padding: 10px;
 }
 
-/* MODAL */
+
 #modal {
   position: fixed;
   top:0;
