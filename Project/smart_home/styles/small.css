@@ -14,7 +14,7 @@
   --color-nav:         #D0D5DD;
   --color-surface:     #FFFFFF;
   --color-text:        #1A1A2E;
-  --color-text-muted:  #4B5563;
+  --color-text-muted:  #374151;
   --color-border:      #D0D5DD;
   --color-footer-bg:   #1A6FA8;
   --color-footer-text: #FFFFFF;
@@ -208,7 +208,7 @@ main h2 {
 
 .hero-overlay h1 {
   font-family: var(--font-display);
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   color: var(--color-white);
   border: none;
   margin-bottom: var(--space-sm);
@@ -374,7 +374,7 @@ blockquote {
 }
 
 .badge.beginner  { background-color: #2E7D32; }
-.badge.moderate  { background-color: #E65100; }
+.badge.moderate  { background-color: #BF360C; }
 .badge.advanced  { background-color: #6A1B9A; }
 
 
@@ -496,7 +496,7 @@ blockquote {
   color: var(--color-white);
 }
 
-.footer-info p { font-size: 0.85rem; margin: 2px 0; color: rgba(255,255,255,0.88); }
+.footer-info p { font-size: 0.85rem; margin: 2px 0; color: rgba(255,255,255,1); }
 
 .footer-info a { color: var(--color-white); font-weight: 600; }
 .footer-info a:hover { color: var(--color-gray); }
