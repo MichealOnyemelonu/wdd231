@@ -1,0 +1,17 @@
+[
+  { "name": "Smart Bulb", "category": "Lighting", "price": 25, "brand": "Philips Hue" },
+  { "name": "Smart Plug", "category": "Power", "price": 20, "brand": "TP-Link" },
+  { "name": "Smart Thermostat", "category": "Climate", "price": 150, "brand": "Nest" },
+  { "name": "Security Camera", "category": "Security", "price": 90, "brand": "Ring" },
+  { "name": "Smart Lock", "category": "Security", "price": 180, "brand": "August" },
+  { "name": "Smart Speaker", "category": "Audio", "price": 50, "brand": "Amazon Echo" },
+  { "name": "Motion Sensor", "category": "Security", "price": 35, "brand": "Aqara" },
+  { "name": "Smart Doorbell", "category": "Security", "price": 120, "brand": "Ring" },
+  { "name": "Smart Switch", "category": "Lighting", "price": 40, "brand": "Lutron" },
+  { "name": "Smart Vacuum", "category": "Cleaning", "price": 300, "brand": "iRobot" },
+  { "name": "Smart TV", "category": "Entertainment", "price": 600, "brand": "Samsung" },
+  { "name": "Smart Sensor", "category": "Monitoring", "price": 30, "brand": "Eve" },
+  { "name": "Smart Hub", "category": "Control", "price": 80, "brand": "Samsung" },
+  { "name": "Smart Fan", "category": "Climate", "price": 110, "brand": "Dyson" },
+  { "name": "Smart Alarm", "category": "Security", "price": 200, "brand": "SimpliSafe" }
+]
