@@ -1,6 +1,5 @@
 :root {
- 
-  --color-blue:        #1A6FA8;
+  --color-blue:        #155D8F;
   --color-blue-dark:   #0D4F7C;
   --color-teal:        #17A89C;
   --color-black:       #1A1A2E;
@@ -14,10 +13,7 @@
   --color-nav:         #D0D5DD;
   --color-surface:     #FFFFFF;
   --color-text:        #1A1A2E;
-
- 
-  --color-text-muted:  #374151;
-
+  --color-text-muted:  #1A1A2E;
   --color-border:      #D0D5DD;
   --color-footer-bg:   #1A6FA8;
   --color-footer-text: #FFFFFF;
@@ -55,12 +51,12 @@ body {
 img { max-width: 100%; height: auto; display: block; }
 
 a {
-  color: var(--color-blue);
+  color: var(--color-blue-dark);
   text-decoration: underline;
   transition: color var(--transition);
 }
 
-a:hover { color: var(--color-blue-dark); }
+a:hover { color: var(--color-black); }
 
 
 #site-header {
@@ -90,11 +86,10 @@ a:hover { color: var(--color-blue-dark); }
   color: var(--color-white);
 }
 
-/* FIX 2: Was rgba(255,255,255,0.85) — too low contrast on blue. Now full white. */
 .header-text p {
   margin: 0;
   font-size: 0.75rem;
-  color: rgba(255,255,255,1);
+  color: var(--color-white);
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -144,7 +139,6 @@ a:hover { color: var(--color-blue-dark); }
   flex-direction: column;
   max-width: 1200px;
 }
-
 
 #main-nav ul.open {
   display: flex;
@@ -212,7 +206,6 @@ main h2 {
 
 .hero-overlay h1 {
   font-family: var(--font-display);
-
   font-size: 1.6rem;
   color: var(--color-white);
   border: none;
@@ -223,7 +216,7 @@ main h2 {
 .hero-overlay p {
   font-size: 1rem;
   margin-bottom: var(--space-lg);
-  opacity: 0.92;
+  color: var(--color-white);
 }
 
 
@@ -254,13 +247,12 @@ main h2 {
   padding: var(--space-md) var(--space-lg);
 }
 
-.tip-section h2 { color: var(--color-blue-dark); }
+.tip-section h2 { color: var(--color-black); }
 
 blockquote {
   margin: 0;
   font-style: italic;
- 
-  color: var(--color-text-muted);
+  color: var(--color-black);
   font-size: 0.95rem;
 }
 
@@ -344,9 +336,7 @@ blockquote {
   transition: background-color var(--transition), transform var(--transition);
 }
 
-.member-card:hover {
-  background-color: var(--color-zebra);
-}
+.member-card:hover { background-color: var(--color-zebra); }
 
 .member-card .card-icon {
   font-size: 2.5rem;
@@ -364,7 +354,7 @@ blockquote {
 
 .member-card p {
   font-size: 0.85rem;
-  color: var(--color-text-muted);
+  color: var(--color-black);
   margin: 2px 0;
 }
 
@@ -379,10 +369,9 @@ blockquote {
   margin-top: var(--space-xs);
 }
 
-/* FIX 5: All three badge colors darkened to pass AA at small text size */
-.badge.beginner  { background-color: #1B5E20; } /* was #2E7D32 — now passes at 0.72rem */
-.badge.moderate  { background-color: #BF360C; } /* was #E65100 — was failing, now passes */
-.badge.advanced  { background-color: #4A148C; } /* was #6A1B9A — slightly darker for safety */
+.badge.beginner  { background-color: #1B5E20; color: #FFFFFF; }
+.badge.moderate { background-color: #8B2500; color: #FFFFFF; }
+.badge.advanced  { background-color: #4A148C; color: #FFFFFF; }
 
 
 #devices-container.list-view {
@@ -408,14 +397,14 @@ blockquote {
 
 .list-icon  { font-size: 1.4rem; flex-shrink: 0; }
 .list-name  { font-weight: 700; color: var(--color-black); min-width: 160px; flex: 2; }
-.list-cat   { color: var(--color-text-muted); flex: 1; min-width: 100px; }
-.list-price { color: var(--color-text-muted); min-width: 80px; }
+.list-cat   { color: var(--color-black); flex: 1; min-width: 100px; }
+.list-price { color: var(--color-black); min-width: 80px; }
 .list-diff  { min-width: 90px; }
 
 .loading-msg {
   text-align: center;
   padding: var(--space-xl);
-  color: var(--color-text-muted);
+  color: var(--color-black);
   font-style: italic;
 }
 
@@ -473,7 +462,7 @@ blockquote {
 .modal-content p {
   font-size: 0.9rem;
   margin: var(--space-xs) 0;
-  color: var(--color-text-muted);
+  color: var(--color-black);
 }
 
 .modal-badge-wrap { margin-bottom: var(--space-sm); }
@@ -503,8 +492,7 @@ blockquote {
   color: var(--color-white);
 }
 
-/* FIX 6: Was rgba(255,255,255,0.88) — too low contrast on #1A6FA8. Now full white. */
-.footer-info p { font-size: 0.85rem; margin: 2px 0; color: rgba(255,255,255,1); }
+.footer-info p { font-size: 0.85rem; margin: 2px 0; color: var(--color-white); }
 
 .footer-info a { color: var(--color-white); font-weight: 600; }
 .footer-info a:hover { color: var(--color-gray); }
@@ -528,8 +516,7 @@ blockquote {
 
 .footer-dev {
   font-size: 0.8rem;
- 
-  color: rgba(255,255,255,1);
+  color: var(--color-white);
   border-top: 1px solid rgba(255,255,255,0.25);
   padding-top: var(--space-md);
 }
