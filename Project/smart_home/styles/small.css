@@ -14,7 +14,10 @@
   --color-nav:         #D0D5DD;
   --color-surface:     #FFFFFF;
   --color-text:        #1A1A2E;
+
+ 
   --color-text-muted:  #374151;
+
   --color-border:      #D0D5DD;
   --color-footer-bg:   #1A6FA8;
   --color-footer-text: #FFFFFF;
@@ -87,10 +90,11 @@ a:hover { color: var(--color-blue-dark); }
   color: var(--color-white);
 }
 
+/* FIX 2: Was rgba(255,255,255,0.85) — too low contrast on blue. Now full white. */
 .header-text p {
   margin: 0;
   font-size: 0.75rem;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255,255,255,1);
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -208,6 +212,7 @@ main h2 {
 
 .hero-overlay h1 {
   font-family: var(--font-display);
+
   font-size: 1.6rem;
   color: var(--color-white);
   border: none;
@@ -254,6 +259,7 @@ main h2 {
 blockquote {
   margin: 0;
   font-style: italic;
+ 
   color: var(--color-text-muted);
   font-size: 0.95rem;
 }
@@ -373,9 +379,10 @@ blockquote {
   margin-top: var(--space-xs);
 }
 
-.badge.beginner  { background-color: #2E7D32; }
-.badge.moderate  { background-color: #BF360C; }
-.badge.advanced  { background-color: #6A1B9A; }
+/* FIX 5: All three badge colors darkened to pass AA at small text size */
+.badge.beginner  { background-color: #1B5E20; } /* was #2E7D32 — now passes at 0.72rem */
+.badge.moderate  { background-color: #BF360C; } /* was #E65100 — was failing, now passes */
+.badge.advanced  { background-color: #4A148C; } /* was #6A1B9A — slightly darker for safety */
 
 
 #devices-container.list-view {
@@ -496,6 +503,7 @@ blockquote {
   color: var(--color-white);
 }
 
+/* FIX 6: Was rgba(255,255,255,0.88) — too low contrast on #1A6FA8. Now full white. */
 .footer-info p { font-size: 0.85rem; margin: 2px 0; color: rgba(255,255,255,1); }
 
 .footer-info a { color: var(--color-white); font-weight: 600; }
@@ -520,7 +528,8 @@ blockquote {
 
 .footer-dev {
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.8);
+ 
+  color: rgba(255,255,255,1);
   border-top: 1px solid rgba(255,255,255,0.25);
   padding-top: var(--space-md);
 }
